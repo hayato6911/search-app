@@ -1,0 +1,30 @@
+<div class="new-main">
+  <div class="cont_title5">
+    <h1>スポット情報登録</h1><hr>
+  </div>
+  <%= form_with model: @location, local: true  do |f| %>
+    <table class="location_info_base5">
+      <thead>
+        <tr class="arrow_box">
+          <th><%= f.label :location_name,'スポット名' %></th>
+          <td><%= f.text_field :location_name, placeholder: 'スポット名を入力' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :introduction,'スポット紹介' %></th>
+          <td><%= f.text_area :introduction, placeholder: 'スポット紹介を入力' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :address,'住所を入力' %></th>
+          <td><%= f.text_field :address, placeholder: '住所を入力' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :price,'料金・予算を入力' %></th>
+          <td><%= f.number_field :price, placeholder: '予算を入力' %></td>
+        </tr>
+      </thead>
+    </table>
+    <div class="done_button">
+      <%= f.submit '登録完了する' %>
+    </div>
+  <% end %>
+</div>

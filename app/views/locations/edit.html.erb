@@ -1,0 +1,33 @@
+<div class="edit-main">
+  <div class="cont_title1">
+    <h1>スポット編集</h1><hr>
+  </div>
+  <%= form_with model: @location, local: true  do |f| %>
+    <table class="location_info_base4">
+      <thead>
+        <tr class="arrow_box">
+          <th><%= f.label :location_name,'スポット名' %></th>
+          <td><%= f.text_field :location_name, placeholder: 'スポット名を入力' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :introduction,'スポット紹介' %></th>
+          <td><%= f.text_area :introduction, placeholder: '例）越谷レイクタウンは埼玉県越谷市にある大型ショッピングモールです！中には映画館などもあるのでおすすめです！' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :address,'住所を入力' %></th>
+          <td><%= f.text_field :address, placeholder: '住所を入力' %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th><%= f.label :price,'予算を入力' %></th>
+          <td><%= f.number_field :price, placeholder: '予算を入力' %></td>
+        </tr>
+      </thead>
+    </table>
+    <div class="done_button">
+      <ul>
+        <li><%= f.submit "スポット編集を完了する" %></li>
+        <li><%= link_to "登録済みスポット一覧に戻る", locations_posts_path %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>

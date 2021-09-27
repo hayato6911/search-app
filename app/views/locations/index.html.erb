@@ -1,0 +1,39 @@
+<div class="index-main">
+  <div class="cont_title2">
+    <h1>みんなのスポット一覧</h1><hr>
+  </div>
+  <table class="location_info_base2">
+    <thead>
+      <% @locations.each do |location| %>
+        <tr class="arrow_box">
+          <th>スポット名</th>
+          <td><%= location.location_name %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th>料金・予算</th>
+          <td><%= location.price %>円</td>
+        </tr>
+        <tr class="arrow_box">
+          <th>どんな所？</th>
+          <td><%= location.introduction %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th>住所</th>
+          <td><%= location.address %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th>詳細</th>
+          <td><%= link_to "詳細を見る", location %></td>
+        </tr>
+        <tr class="touroku">
+          <th>消去</th>
+          <% if location.user == current_user %>
+            <td><%= link_to "消去しますか？", location, method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
+          <% else %>
+        　   <td></td>
+          <% end %>
+        </tr>
+      <% end %>
+    </thead>
+  </table>
+</div>

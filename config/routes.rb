@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'locations/index'
+  get 'locations/posts'
+  get 'helpful/index'
+  resources :locations
+  devise_for :users
+  root to: "home#index"
+  
+  resources :users, :only => [:posts]
+  resources :locations, :only => [:new]
 end

@@ -1,0 +1,214 @@
+// Place all the styles related to the helpful controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*共通*/
+.content-width{
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 45px;
+    margin-right: 65px;
+    position: relative;
+  }
+  
+  .contents-tidy {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /*main画面*/
+  
+  .main-section{
+    border-bottom: 100px solid #FFFFE0;
+  }
+  
+  .container1 {
+    width: 100vw;
+    height: 100vh;
+    background: #666 url(https://bluegreen.jp/wp-content/uploads/2019/07/IMG_5305.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .container1::before {
+    content: '';
+    position: absolute;
+    /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+    top: 0px;
+    bottom: 0px;
+    left: -5px;
+    right: -5px;
+    background: inherit;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  
+  
+  .title3 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: calc(100vh / 2 - 60px);
+    text-shadow: 0 0 10px #333;
+  }
+  
+  /*どんなサービス？*/
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    height: 127px;
+    margin-bottom: 20px;
+  }
+  
+  .section-header p {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-header h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 43px;
+    margin-top: 10px;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-header.bottom-line::after {
+    content: '';
+    display: block;
+    border-bottom: solid 6px #f79314;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .sub-text{
+    text-align:center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /*使い方*/
+  
+  .titel2 span{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .btn,
+  a.btn,
+  button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  a.btn-border {
+    margin-bottom: 12px;
+    padding: 0;
+  
+    -webkit-transition: all 0.3s;
+  
+    transition: all 0.3s;
+  
+    border-radius: 0;
+  }
+  
+  a.btn-border span {
+    position: relative;
+    display: block;
+    padding: 1.25rem 3rem;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 0.5rem;
+    background: #FFCC33;;
+  }
+  
+  a.btn-border:before {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  
+    display: block;
+  
+    width: 100%;
+    height: 14px;
+  
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  
+    border: 2px solid #000;
+    border-top: 1px solid #000;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-image: -webkit-repeating-linear-gradient(
+      135deg,
+      #000,
+      #000 1px,
+      transparent 2px,
+      transparent 5px
+    );
+    background-image: repeating-linear-gradient(
+      -45deg,
+      #000,
+      #000 1px,
+      transparent 2px,
+      transparent 5px
+    );
+    background-size: 7px 7px;
+  
+    -webkit-backface-visibility: hidden;
+  
+    backface-visibility: hidden;
+  }
+  
+  h2.titel2 {
+    text-align: center;
+  }
+  
+  a.btn-border:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+  }
+  
+  a.btn-border:hover:before {
+    bottom: -5px;
+  }
+  
+  a.btn-border:active {
+    -webkit-transform: translate(0, 7px);
+    transform: translate(0, 7px);
+  }
+  
+  a.btn-border:active:before {
+    bottom: -1px;
+  }
+  
+  .ikou_btn{
+    text-align: center;
+  }

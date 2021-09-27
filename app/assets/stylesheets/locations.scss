@@ -1,0 +1,397 @@
+// Place all the styles related to the locations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*共通*/
+.location1{
+    width:200px;
+  }
+ 
+  .touroku{
+    text-align:center;
+    border-bottom: 25px solid #fff;
+  }
+
+  .arrow_box{
+    text-align:center;
+  }
+
+  .icon_image1 {
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  table td{
+    border-bottom: solid 4px white;
+  }
+  
+  /*登録済みスポット一覧（自分で登録）*/
+  
+  .post-main{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  }
+  
+  .cont_title h1 {
+      font-size: 45px;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .cont_title hr {
+      width: 95px;
+      margin: 5px auto 0;
+      border: 0;
+      border-bottom: 3px solid #559545;
+  }
+  
+  table.location_info_base1 {
+      width: 800px;
+      margin: 30px auto -24px;
+      font-size: 16px;
+  }
+  
+  table.location_info_base1 th {
+      background: #669900;
+      vertical-align: middle;
+      text-align: center;
+      width: 200px;
+      overflow: visible;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+  }
+  
+  table.location_info_base1 th:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #669900;
+      border-width: 10px;
+      margin-top: -10px;
+  }
+  
+  table.location_info_base1 td {
+      padding: 10px;
+      color: #000;
+      background: #F6F6F6;
+  }
+  
+  /*みんなのスポット一覧*/
+  
+  .index-main{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  }
+  
+  .cont_title2 hr {
+      width: 95px;
+      margin: 5px auto 0;
+      border: 0;
+      border-bottom: 3px solid orange;
+  }
+  
+  .cont_title2 h1 {
+      font-size: 45px;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  table.location_info_base2 {
+      width: 800px;
+      margin: 30px auto -25px;
+      font-size: 16px;
+  }
+  
+  table.location_info_base2 th {
+      background: #FF9900;
+      vertical-align: middle;
+      text-align: center;
+      width: 200px;
+      overflow: visible;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+  }
+  
+  table.location_info_base2 th:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #FF9900;
+      border-width: 10px;
+      margin-top: -10px;
+  }
+  
+  
+  table.location_info_base2 td {
+      padding: 10px;
+      color: #000;
+      background: #F6F6F6;
+  }
+  
+  /*スポット編集*/
+  
+  .edit-main{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  
+  .edit_location{
+    max-width: 880px;
+    margin: 30px 17%;
+  }
+  
+  #location_location_name{
+      width: 85%;
+      height: 38px;
+      margin-left: 30px;
+  }
+  
+  #location_introduction{
+    width: 85%;
+    height: 134px;
+    margin-left: 30px;
+  }
+  
+  #location_address{
+    width: 85%;
+      height: 38px;
+      margin-left: 30px;
+  }
+  
+  #location_price{
+      width: 85%;
+      height: 38px;
+      margin-left: 30px;
+  }
+  
+  #location_location_image{
+      width: 85%;
+      height: 38px;
+      margin-left: 24px;
+  }
+  
+  .cont_title1 h1 {
+      font-size: 45px;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .cont_title1 hr {
+      width: 95px;
+      margin: 5px auto 0;
+      border: 0;
+      border-bottom: 5px solid #9999FF;
+  }
+  
+  table.location_info_base4 th {
+      background: #9999FF;
+      vertical-align: middle;
+      text-align: center;
+      width: 165px;
+      overflow: visible;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+  }
+  
+  table.location_info_base4 {
+      width: 800px;
+      margin: 30px auto 0;
+      font-size: 16px;
+      margin-bottom: 40px;
+  }
+  
+  table.location_info_base4 th:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #9999FF;
+      border-width: 10px;
+      margin-top: -10px;
+  }
+  
+  table.location_info_base4 td {
+      padding: 10px;
+      color: #000;
+      background: #F6F6F6;
+  }
+  
+  .done_button{
+    text-align:center;
+  }
+  
+  /*マップの表示*/
+    #map { 
+      height: 200px;
+      width: 400px;
+      margin-top: 22px;
+      margin-left: 22%;
+    }
+    
+  /*スポット詳細*/
+  
+  .show-main{
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+  }
+  
+  table.location_info_base3 th {
+      background: #000;
+      vertical-align: middle;
+      text-align: center;
+      width: 200px;
+      overflow: visible;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+  }
+  
+  table.location_info_base3 {
+      width: 800px;
+      margin: 30px auto 0;
+      font-size: 16px;
+  }
+  
+  table.location_info_base3 th:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #000;
+      border-width: 10px;
+      margin-top: -10px;
+  }
+  
+  table.location_info_base3 td {
+      padding: 10px;
+      color: #000;
+      background: #F6F6F6;
+  }
+  
+  .cont_title3 hr {
+      width: 95px;
+      margin: 5px auto 0;
+      border: 0;
+      border-bottom: 3px solid #000;
+  }
+  
+  .cont_title3 h1 {
+      font-size: 45px;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  /*スポット登録*/
+  
+  .new-main {
+      background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  
+  table.location_info_base5 th {
+      background: #F00;
+      vertical-align: middle;
+      text-align: center;
+      width: 200px;
+      overflow: visible;
+      position: relative;
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+  }
+  
+  table.location_info_base5 {
+      width: 800px;
+      margin: 30px auto 0;
+      font-size: 16px;
+      margin-bottom: 40px;
+  }
+  
+  table.location_info_base5 th:after {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(136, 183, 213, 0);
+      border-left-color: #F00;
+      border-width: 10px;
+      margin-top: -10px;
+  }
+  
+  table.location_info_base5 td {
+      padding: 10px;
+      color: #000;
+      background: #F6F6F6;
+  }
+  
+  .cont_title5 hr {
+      width: 95px;
+      margin: 5px auto 0;
+      border: 0;
+      border-bottom: 3px solid #F00;
+  }
+  
+  .cont_title5 h1 {
+      font-size: 45px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+  }
+/*星のcss*/
+
+.star-rating {
+    position: relative;
+    width: 5em;
+    height: 1em;
+    font-size: 25px;
+  }
+  .star-rating-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #ffcc33;
+  }
+  .star-rating-back {
+    color: #ccc;
+  }
+  
+  .average-score {
+    display: flex;
+  }
+  .average-score-display {
+    font-size: 16px;
+  }

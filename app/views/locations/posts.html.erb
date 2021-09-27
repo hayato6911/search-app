@@ -1,0 +1,32 @@
+<div class="post-main">
+  <div class="cont_title">
+    <h1>登録済みスポット一覧（自分で登録）</h1><hr>
+  </div>
+  <table class="location_info_base1">
+    <thead>
+      <% @locations.each do |location| %>
+        <tr class="arrow_box">
+          <th>スポット名</th>
+          <td><%= location.location_name %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th>料金・予算</th>
+          <td><%= location.price %>円</td>
+        </tr>
+        <tr class="arrow_box">
+          <th>どんな所？</th>
+          <td><%= location.introduction %></td>
+        </tr>
+        <tr class="arrow_box">
+          <th>住所</th>
+          <td><%= location.address %></td>
+        </tr>
+        <tr class="touroku">
+          <th>詳細・編集・削除</th>
+          <td><%= link_to "詳細を見る", location %><br><%= link_to "編集", edit_location_path(location) %><br><%= link_to "削除しますか？", location, method: :delete, data: { confirm: "本当に削除しますか？" } %> <br>
+        </tr>
+      <% end %>
+    </thead>
+  </table>
+</div>
+ 
