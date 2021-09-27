@@ -45,11 +45,6 @@
         <th>スポット紹介</th>
         <td><%= @location.introduction %></td>
       </tr>
-      <tr class="arrow_box">
-        <th>口コミを見る</th>
-        <td><%= link_to "レビューを見る", location_reviews_path(@location), class: "button light ml-3 mt-3" %></td>
-      </tr>
     </thead>
   </table>
-  <%= render 'reviews/form', review: @review, location: @location %>
 </div>
