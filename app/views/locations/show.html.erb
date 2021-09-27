@@ -1,0 +1,55 @@
+<div class="show-main">
+  <div class="cont_title3">
+    <h1>スポット詳細ページ</h1><hr>
+  </div>
+  <table class="location_info_base3">
+    <thead>
+      <tr class="arrow_box">
+        <th>スポット名</th>
+        <td><%= @location.location_name %></td>
+      </tr>
+      <tr class="arrow_box">
+        <th>料金・予算</th>
+        <td><%= @location.price %>円</td>
+      </tr>
+      <tr class="arrow_box">
+        <th>住所</th>
+        <td><%= @location.address %><div id="map"></div></td>
+        <script type="text/javascript">
+          function initMap() {var test ={lat: <%= @location.latitude %>, lng: <%= @location.longitude %>};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 15,
+              center: test
+            });
+            var transitLayer = new google.maps.TransitLayer();
+            transitLayer.setMap(map);
+            var contentString = '住所：<%= @location.address %>';
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString
+            });
+            var marker = new google.maps.Marker({
+              position:test,
+              map: map,
+              title: contentString
+            });
+            marker.addListener('click', function() {
+              infowindow.open(map, marker);
+            });
+          }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
+        </script>
+      </tr>
+      <tr class="arrow_box">
+        <th>スポット紹介</th>
+        <td><%= @location.introduction %></td>
+      </tr>
+      <tr class="arrow_box">
+        <th>口コミを見る</th>
+        <td><%= link_to "レビューを見る", location_reviews_path(@location), class: "button light ml-3 mt-3" %></td>
+      </tr>
+    </thead>
+  </table>
+  <%= render 'reviews/form', review: @review, location: @location %>
+</div>

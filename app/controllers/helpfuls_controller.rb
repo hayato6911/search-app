@@ -1,0 +1,2 @@
+class HelpfulsController < ApplicationController
+end

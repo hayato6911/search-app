@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SearchApp</title>
+    <title>Portfolio2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/a2ed1e393c.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
+    <% if flash[:notice] %>
+      <div class="notification is-info">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% end %>
+    
+    <% if flash[:alert] %>
+      <div class="notification is-danger">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+    
+    <% if user_signed_in? %>
+    <header class="page-header" id="header">
+      <div class="navbar-item">
+        <a href="/" class="title is-4" style="font-family: cursive;">Asobuno Tanosiiina</a>
+        <p class="control">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button logout" %>
+        </p>
+      </div>
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-end1">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <%= link_to "TOP", root_path, class: "button is-warning is-light" %>
+              </p>
+              <p class="control">
+                <%= link_to "Asobuno Tanosiiinaとは?", helpful_index_path, class: "button is-warning is-light" %>
+              </p>
+              <p class="control">
+                <%= link_to "スポット登録", new_location_path, class: "button is-warning is-light" %>
+              </p>
+              <p class="control">
+                <%= link_to "スポット登録一覧", locations_posts_path, class: "button is-warning is-light" %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% else %>
+      <div class="navbar-item">
+        <a href="/" class="title is-4" style="font-family: cursive;">Asobuno Tanosiiina</a>
+      </div>
+      <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-end2">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <%= link_to "TOP", root_path, class: "button is-warning is-light2" %>
+              </p>
+              <p class="control">
+                <%= link_to "Asobuno Tanosiiinaとは?", helpful_index_path, class: "button is-warning is-light2" %>
+              </p>
+              <p class="control">
+                <%= link_to "ログイン", new_user_session_path, class: "button is-warning is-light2" %>
+              </p>
+              <p class="control">
+                <%= link_to "新規登録", new_user_registration_path, class: "button is-warning is-light2" %>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
     <%= yield %>
+    <footer id="footer01" class="footer outer-block">
+      <div class="logo">
+        <a href="/" class="title is-5" style="font-family: cursive;">Asobuno Tanosiiina</a>
+      </div>
+      <p class="copyright">
+        © 2021 Copyright: Asobuno Tanosiiina
+      </p>
+    </footer>
   </body>
 </html>
