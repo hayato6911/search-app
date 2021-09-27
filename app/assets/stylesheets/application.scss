@@ -14,4 +14,148 @@
  *= require_self
  */
 
-@import "bulma";
+ @import "bulma";
+
+ /*サインイン時のヘッダー修正*/
+  .notification.is-info {
+     background-color: #3298dc;
+     color: #fff;
+     margin-bottom: 0px;
+ }
+ 
+ .button.logout{
+     font-weight: bold;
+     margin-left: -300px;
+ }
+ 
+  .hero.is-info .title {
+     color: #fff;
+     text-align: center;
+ }
+ 
+ .navbar-item, .navbar-link {
+    align-items: center;
+    display: flex;
+    background-color: black;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+   .title.is-4 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+ }
+ }
+ 
+ .title.is-4 {
+    margin: 0 auto;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+ }
+ 
+ .button.is-warning.is-light {
+   background-color: white;
+   color: #947600;
+ }
+ 
+ .navbar-menu {
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: black;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+   .navbar-menu {
+     display: contents;
+ }
+ }
+ 
+ .navbar-end1 {
+   justify-content: flex-end;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: black;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+ .navbar-end1 {
+   justify-content: flex-end;
+   background-color: black;
+ }
+ }
+ 
+ .navbar-end2 {
+    justify-content: flex-end;
+    margin-left: 12%;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+   .navbar-end2 {
+     justify-content: flex-end;
+     background-color: black;
+     margin-left: 0;
+ }
+ }
+ 
+ .button.is-warning.is-light {
+     margin-left: 75px;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ @media screen and (max-width: 1080px) {
+   .button.is-warning.is-light {
+   font-size: 15px;
+   font-weight: bold;
+ }
+ }
+ 
+ @media screen and (max-width: 1080px) {
+   .button.is-warning.is-light2 {
+     font-size: 20px;
+     font-weight: bold;
+     margin-left: 75px;
+     background-color: white;
+     color: #947600;
+ }
+ }
+ 
+ .button.is-warning.is-light2 {
+   font-size: 20px;
+   margin-left: 75px;
+   font-weight: bold;
+   background-color: white;
+   color: #947600;
+ }
+ 
+ /*footer*/
+ ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+  
+ #footer01 {
+   position: relative;
+   background: #222;
+   height: 50px;
+ }
+  
+ #footer01 .logo {
+   text-align: center;
+   padding: 20px 0;
+   border-bottom: 1px solid #111;
+ }
+   
+ .title.is-5 {
+   font-size: 20px;
+   margin-bottom: 20px;
+   color: white;
+ }
+ 
+ .copyright{
+   text-align:center;
+ }
