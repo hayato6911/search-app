@@ -14,6 +14,10 @@
           <td><%= f.text_area :introduction, placeholder: '例）越谷レイクタウンは埼玉県越谷市にある大型ショッピングモールです！中には映画館などもあるのでおすすめです！' %></td>
         </tr>
         <tr class="arrow_box">
+          <th><%= f.label :location_image,'画像を選択' %></th>
+          <td><%= f.file_field :location_image %></td>
+        </tr>
+        <tr class="arrow_box">
           <th><%= f.label :address,'住所を入力' %></th>
           <td><%= f.text_field :address, placeholder: '住所を入力' %></td>
         </tr>
