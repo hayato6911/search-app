@@ -68,3 +68,5 @@ gem 'devise'
 gem "bulma-rails"
 gem 'ransack'
 gem 'carrierwave'
+gem 'dotenv-rails'
+gem 'fog-aws'
