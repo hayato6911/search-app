@@ -13,10 +13,15 @@
         <td><%= @location.price %>円</td>
       </tr>
       <tr class="arrow_box">
+        <th>スポット画像</th>
+        <td><img src=<%= @location.location_image.to_s %> class = "icon_imagea"></td>
+      </tr>
+      <tr class="arrow_box">
         <th>住所</th>
         <td><%= @location.address %><div id="map"></div></td>
         <script type="text/javascript">
-          function initMap() {var test ={lat: <%= @location.latitude %>, lng: <%= @location.longitude %>};
+          function initMap() {
+            var test ={lat: <%= @location.latitude %>, lng: <%= @location.longitude %>};
             var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 15,
               center: test
@@ -40,10 +45,6 @@
         <script async defer
           src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
         </script>
-      </tr>
-      <tr class="arrow_box">
-        <th>スポット画像</th>
-        <td><img src=<%= @location.location_image.to_s %> class = "icon_imagea"></td>
       </tr>
       <tr class="arrow_box">
         <th>スポット紹介</th>
