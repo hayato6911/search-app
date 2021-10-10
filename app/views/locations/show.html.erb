@@ -19,6 +19,9 @@
       <tr class="arrow_box">
         <th>住所</th>
         <td><%= @location.address %><div id="map"></div></td>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
+        </script>
         <script type="text/javascript">
           function initMap() {
             var test ={lat: <%= @location.latitude %>, lng: <%= @location.longitude %>};
@@ -41,9 +44,6 @@
               infowindow.open(map, marker);
             });
           }
-        </script>
-        <script async defer
-          src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=<%= ENV['GOOGLE_MAP_API_KEY'] %>&callback=initMap">
         </script>
       </tr>
       <tr class="arrow_box">
