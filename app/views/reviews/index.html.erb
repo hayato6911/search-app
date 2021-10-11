@@ -7,15 +7,16 @@
             <p class="card-header-title">
               <%= @location.location_name %>
             </p>
+            <img src=<%= @location.location_image.to_s %> class = "icon_imagea">
           </header>
           <div class="card-content">
             <div class="content average-score">
               <div class="star-rating mb-2">
-
+                <div class="star-rating-front" style="width: <%= @location.review_score_percentage %>%">★★★★★</div>
                 <div class="star-rating-back">★★★★★</div>
               </div>
               <div class="average-score-display ml-3 pt-2">
-
+                <%= @location.avg_score %>点（<%= @location.reviews.count %>件のレビュー）
               </div>
             </div>
           </div>
