@@ -45,7 +45,7 @@
       width: 95px;
       margin: 5px auto 0;
       border: 0;
-      border-bottom: 3px solid #559545;
+      border-bottom: 3px solid black;
   }
   
   table.location_info_base1 {
@@ -82,14 +82,15 @@
       width: 95px;
       margin: 5px auto 0;
       border: 0;
-      border-bottom: 3px solid orange;
+      border-bottom: 3px solid black;
   }
   
   .cont_title2 h1 {
-      font-size: 45px;
-      color: black;
-      text-align: center;
-      font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
   }
   
   table.location_info_base2 {
@@ -134,10 +135,6 @@
   
   /*スポット編集*/
   
-  .edit-main{
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-  }
-  
   .edit_location{
     max-width: 880px;
     margin: 30px 17%;
@@ -174,17 +171,18 @@
   }
   
   .cont_title1 h1 {
-      font-size: 45px;
-      color: black;
-      text-align: center;
-      font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
   }
   
   .cont_title1 hr {
       width: 95px;
       margin: 5px auto 0;
       border: 0;
-      border-bottom: 5px solid #9999FF;
+      border-bottom: 5px solid black;
   }
   
   table.location_info_base4 th {
@@ -319,13 +317,15 @@
       width: 95px;
       margin: 5px auto 0;
       border: 0;
-      border-bottom: 3px solid #F00;
+      border-bottom: 3px solid black;
   }
   
   .cont_title5 h1 {
-      font-size: 45px;
-      text-align: center;
-      font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
   }
 /*星のcss*/
 
