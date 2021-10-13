@@ -27,8 +27,8 @@
     margin: 0 auto;
   }
   
-  table td{
-    border-bottom: solid 4px white;
+  table td, th {
+    border-bottom: solid 2px white;
   }
   
   /*登録済みスポット一覧（自分で登録）*/
@@ -251,10 +251,6 @@
     
   /*スポット詳細*/
   
-  .show-main{
-    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
-  }
-  
   table.location_info_base3 th {
       background: #000;
       vertical-align: middle;
@@ -273,25 +269,11 @@
       font-size: 16px;
   }
   
-  table.location_info_base3 th:after {
-      left: 100%;
-      top: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(136, 183, 213, 0);
-      border-left-color: #000;
-      border-width: 10px;
-      margin-top: -10px;
-  }
-  
   table.location_info_base3 td {
       padding: 10px;
       color: #000;
       background: #F6F6F6;
+      font-weight: 700;
   }
   
   .cont_title3 hr {
@@ -302,10 +284,11 @@
   }
   
   .cont_title3 h1 {
-      font-size: 45px;
-      color: black;
-      text-align: center;
-      font-weight: bold;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
   }
   
   /*スポット登録*/
