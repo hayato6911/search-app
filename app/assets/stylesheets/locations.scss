@@ -186,7 +186,7 @@
   }
   
   table.location_info_base4 th {
-      background: #9999FF;
+      background: black;
       vertical-align: middle;
       text-align: center;
       width: 165px;
@@ -202,21 +202,6 @@
       margin: 30px auto 0;
       font-size: 16px;
       margin-bottom: 40px;
-  }
-  
-  table.location_info_base4 th:after {
-      left: 100%;
-      top: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(136, 183, 213, 0);
-      border-left-color: #9999FF;
-      border-width: 10px;
-      margin-top: -10px;
   }
   
   table.location_info_base4 td {
@@ -274,7 +259,7 @@
   /*スポット登録*/
   
   table.location_info_base5 th {
-      background: #F00;
+    background: black;
       vertical-align: middle;
       text-align: center;
       width: 200px;
@@ -290,21 +275,6 @@
       margin: 30px auto 0;
       font-size: 16px;
       margin-bottom: 40px;
-  }
-  
-  table.location_info_base5 th:after {
-      left: 100%;
-      top: 50%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(136, 183, 213, 0);
-      border-left-color: #F00;
-      border-width: 10px;
-      margin-top: -10px;
   }
   
   table.location_info_base5 td {
