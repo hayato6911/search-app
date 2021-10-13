@@ -3,7 +3,20 @@
     <div class="row col-lg-6">
       <div class="form-fream">
         <div class="form-area">
-          <p class="form-area-title">旅に出よう。</p>
+          <div id="textmen">
+          </div>
+          <script type="text/javascript">
+            var i=0,text;
+            text = "そうだ、旅に出よう。"
+            function typing() {
+              if(i<text.length){
+                document.getElementById("textmen").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typing,170);
+              }
+            }
+          typing();
+          </script>
           <%= search_form_for @q  do |f| %>
             <%= f.search_field :address_cont,placeholder: '例）埼玉県春日部市' %>
             <%= f.submit "検索", class: "button1"%>

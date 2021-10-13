@@ -3,92 +3,102 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .button1 {
-    display: flex;
-    border-radius: 5%;
-    font-size: 40pt;
-    text-align: center;
-    cursor: pointer;
-    padding: 23px 400px;
-    background: #7f007f;
-    color: #ffffff;
-    line-height: 1em;
-    transition: .3s;
-    box-shadow: 11px 11px 4px #666666;
-    border: 2px solid #7f007f;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-  }
-  
-  @media screen and (max-width: 1080px){
-    .button1 {
-    display: flex;
-    border-radius: 5%;
-    font-size: 40pt;
-    text-align: center;
-    cursor: pointer;
-    padding: 23px 40%;
-    background: #7f007f;
-    color: #ffffff;
-    line-height: 1em;
-    transition: .3s;
-    box-shadow: 11px 11px 4px #666666;
-    border: 2px solid #7f007f;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-  }
-  }
-  
-  .button1:hover {
-    box-shadow    : none;        /* カーソル時の影消去 */
-    color         : #7f007f;     /* 背景色     */
-    background    : #ffffff;     /* 文字色     */
-  }
-  
+  display: flex;
+  border-radius: 5%;
+  font-size: 15pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 120px;
+  background: #7f007f;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 11px 11px 4px #666666;
+  border: 2px solid #7f007f;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1080px){
+  .button1 {
+  display: flex;
+  border-radius: 5%;
+  font-size: 40pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 23px 40%;
+  background: #7f007f;
+  color: #ffffff;
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 11px 11px 4px #666666;
+  border: 2px solid #7f007f;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+}
+}
+
+.button1:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #7f007f;     /* 背景色     */
+  background    : #ffffff;     /* 文字色     */
+}
+
+.form-area-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5%;
+  padding-top: 50px;
+  color: black;
+}
+
+@media screen and (max-width: 1080px) {
   .form-area-title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5%;
     padding-top: 50px;
     color: black;
-  }
-  
-  @media screen and (max-width: 1080px) {
-    .form-area-title {
-      font-size: 30px;
-      font-weight: bold;
-      text-align: center;
-      padding-top: 50px;
-      color: black;
-  }
-  }
-  
-  #q_address_cont{
-    width: 700px;
-    height: 70px;
-    margin: 0 auto;
-  }
-  
-  form#location_search {
-    text-align: center;
-  }
-  
-  @media screen and (max-width: 1080px) {
-  form#location_search {
-    text-align: center;
-    margin-top: 15%;
-  }
-  }
-  
-  .top-main {
-    width: 100vw;
-    height: 100vh;
-    background: #666 url(https://publicdomainq.net/images/201705/06s/publicdomainq-0008766fuw.jpg) no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 0;
-  }
+}
+}
+
+#q_address_cont {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+form#location_search {
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+form#location_search {
+  text-align: center;
+  margin-top: 15%;
+}
+}
+
+.top-main {
+  width: 100vw;
+  height: 100vh;
+  background: #666 url(https://publicdomainq.net/images/201705/06s/publicdomainq-0008766fuw.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+#textmen{
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 150px;
+  padding-left: 30px;
+  font-weight: bolder;
+}
