@@ -29,6 +29,22 @@
           <th>詳細</th>
           <td><%= link_to "詳細を見る・レビューを書く", location %></td>
         </tr>
+        <tr class="arrow_box">
+          <th>いいね</th>
+          <td>
+            <% if current_user.already_favorited?(location) %>
+              <%= link_to location_favorites_path(location), method: :delete do %>
+                <i class="fas fa-heart"></i>
+              <% end %>
+              <%= location.favorites.count %>
+            <% else %>
+              <%= link_to location_favorites_path(location), method: :post do %>
+                <i class="far fa-heart"></i>
+              <% end %>
+              <%= location.favorites.count %>
+            <% end %>
+          </td>
+        </tr>
         <tr class="touroku">
           <th>消去</th>
           <% if location.user == current_user %>

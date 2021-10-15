@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :locations, dependent: :destroy
   has_many :reviews, dependent: :destroy
+  has_many :favorites, dependent: :destroy
+  
+  def already_favorited?(location)
+    self.favorites.exists?(location_id: location.id)
+  end
 end

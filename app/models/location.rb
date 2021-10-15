@@ -6,6 +6,8 @@ class Location < ApplicationRecord
 
   has_many :reviews, dependent: :destroy
 
+  has_many :favorites, dependent: :destroy
+
   belongs_to :user, optional: true
 
   def avg_score

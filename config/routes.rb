@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   resources :users, :only => [:posts]
   resources :locations, :only => [:new] do
     resources :reviews, only: [:index, :create]
+    resource :favorites, only: [:create, :destroy]
   end
 end

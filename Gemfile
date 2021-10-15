@@ -73,3 +73,4 @@ gem 'carrierwave'
 gem 'dotenv-rails'
 gem 'fog-aws'
 gem "geocoder"
+gem 'jquery-rails'
