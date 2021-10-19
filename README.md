@@ -1,24 +1,26 @@
-# README
+<h1>アプリケーション名</h1>　<br>
+Asobuno Tanosiiina
+<h1>なぜ作成したのか</h1>
+私は、子どものころ次の日に旅行や遠足など遊びに行く予定があると、ウキウキしてよく寝れませんでした。<br>
+大人になるにつれ、そんな気持ちも段々と薄くなってしまいます。<br>
+そんな童心に戻るためのアプリでもあります。<br>
+その他に、友達と集まったのは良いものの、遊びに行くところが無いなどの問題解決もできます。
+<h1>URL</h1>
+https://powerful-brushlands-45793.herokuapp.com/<br>
+ログイン情報<br>
+メールアドレス：aaa@aaa.co.jp<br>
+パスワード：123456<br>
+<h1>利用方法</h1>
+ログインせずに使用：本アプリはログインをしなくても、検索機能を使用することができます。<br>
+TOPページの検索欄から「埼玉県」や「東京都」など調べたい都道府県名を入れ検索してください。<br>
+<br>
+新規登録し、ログインして使用：新規登録して、ログインすると本アプリの全機能を使用することができます。<br>
+行ってみてよかったスポットの共有や、スポットのレビュー、いいね機能も利用することができます。<br>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img width="450" alt="スクリーンショット 2021-10-19 18 02 47" src="https://user-images.githubusercontent.com/81948704/137878593-051a1689-9e0b-4207-bec2-ba8ecaf44540.png"><img width="450" alt="スクリーンショット 2021-10-19 18 03 14" src="https://user-images.githubusercontent.com/81948704/137878610-0d03a433-ba05-471f-b15b-f0f91b81471b.png">
+<h1>今後の機能拡張予定</h1>
+  google map:スポット登録をした際に住所を入力すると、そこの住所のマップが出る。<br>
+  ランキング機能：いいね機能を元に、いいねが多い順にランキングを作って生きたと思います。<br>
+  ユーザー様が見やすいよう、日々デザインを修正していこうと思います。<br>
+  
+ 
