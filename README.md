@@ -16,7 +16,7 @@ TOPページの検索欄から「埼玉県」や「東京都」など調べた�
 新規登録し、ログインして使用：新規登録して、ログインすると本アプリの全機能を使用することができます。<br>
 行ってみてよかったスポットの共有や、スポットのレビュー、いいね機能も利用することができます。<br>
 
-<img width="420" alt="スクリーンショット 2021-10-19 18 02 47" src="https://user-images.githubusercontent.com/81948704/137878593-051a1689-9e0b-4207-bec2-ba8ecaf44540.png"><img width="420" alt="スクリーンショット 2021-10-19 18 03 14" src="https://user-images.githubusercontent.com/81948704/137878610-0d03a433-ba05-471f-b15b-f0f91b81471b.png">
+<img width="300" alt="スクリーンショット 2021-10-19 18 02 47" src="https://user-images.githubusercontent.com/81948704/137878593-051a1689-9e0b-4207-bec2-ba8ecaf44540.png"><img width="300" alt="スクリーンショット 2021-10-19 18 03 14" src="https://user-images.githubusercontent.com/81948704/137878610-0d03a433-ba05-471f-b15b-f0f91b81471b.png">
 <h1>今後の機能拡張予定</h1>
   google map:スポット登録をした際に住所を入力すると、そこの住所のマップが出る。<br>
   ランキング機能：いいね機能を元に、いいねが多い順にランキングを作って生きたと思います。<br>
