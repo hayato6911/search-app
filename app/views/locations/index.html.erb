@@ -50,11 +50,10 @@
           </td>
         </tr>
         <tr class="touroku">
-          <th>消去</th>
           <% if location.user == current_user %>
+            <th>消去</th>
             <td><%= link_to "消去しますか？", location, method: :delete, data: { confirm: "本当に削除しますか？" } %></td>
           <% else %>
-        　   <td></td>
           <% end %>
         </tr>
       <% end %>
