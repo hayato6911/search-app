@@ -29,7 +29,7 @@
       <div class="navbar-item">
         <a href="/" class="title is-4" style="font-family: cursive;">Asobuno Tanosiiina</a>
         <p class="control">
-          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "button-color1 logout" %>
+          <div class="button-color1 logout">現在ログイン中：<%= current_user.username %></div>
         </p>
       </div>
       <div id="navbarExampleTransparentExample" class="navbar-menu">
@@ -47,6 +47,9 @@
               </p>
               <p class="control">
                 <%= link_to "スポット登録一覧", locations_posts_path, class: "headbottan button-color" %>
+              </p>
+              <p class="control">
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "headbottan button-color" %>
               </p>
             </div>
           </div>
