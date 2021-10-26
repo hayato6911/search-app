@@ -28,9 +28,15 @@
     <header class="page-header" id="header">
       <div class="navbar-item">
         <a href="/" class="title is-4" style="font-family: cursive;">Asobuno Tanosiiina</a>
-        <p class="control">
-          <div class="button-color1 logout">現在ログイン中：<%= current_user.username %></div>
-        </p>
+        <ul class="menu">
+          <li>
+            <div class="button-color1 logout">現在ログイン中：<%= current_user.username %></div>
+            <ul>
+			        <li><%= link_to "ユーザー編集ページ", edit_user_registration_path, class: "header-pl" %></li>
+			        <li><%= link_to "ユーザー登録一覧", users_path, class: "header-pl" %></li>
+		        </ul>
+	        </li>
+	     </ul>
       </div>
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-end1">

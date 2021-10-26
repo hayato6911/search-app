@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "home#index"
   
-  resources :users, :only => [:posts]
+  resources :users, :only => [:posts, :index, :show]
+  
   resources :locations, :only => [:new] do
     resources :reviews, only: [:index, :create]
     resource :favorites, only: [:create, :destroy]
