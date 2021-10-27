@@ -28,6 +28,16 @@
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
           </p>
         </div>
+
+        <div class="field">
+          <%= f.label :自己紹介, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.text_field :profile, autofocus: true, autocomplete: "profile",  class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
         
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>

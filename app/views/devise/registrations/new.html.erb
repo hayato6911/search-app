@@ -37,6 +37,16 @@
         </div>
 
         <div class="field">
+          <%= f.label :profile_image_id, class: "label" %>
+          <p class="control has-icons-left">
+            <%= f.file_field :profile_image_id, autofocus: true, autocomplete: "profile_image_id",  class: "input" %>
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+
+        <div class="field">
           <%= f.label :password, class: "label" %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> 文字以上)</em>

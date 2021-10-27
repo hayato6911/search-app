@@ -16,23 +16,23 @@
  }
  
  input#user_username {
-    width: 200px;
+    width: 450px;
  }
  
  input#user_email {
-    width: 200px;
+    width: 450px;
  }
  
  input#user_password {
-    width: 200px;
+    width: 450px;
  }
  
  input#user_password_confirmation {
-    width: 200px;
+    width: 450px;
  }
  
  input#user_current_password {
-    width: 200px;
+    width: 450px;
  }
  
  label {
@@ -49,6 +49,13 @@
      text-align: center;
  }
 
+ input#user_profile {
+    width: 500px;
+    height: 200px;
+}
+
+/*ユーザー登録一覧*/
+
  .user-right {
     border-bottom: 1px solid black;
     width: 300px;
@@ -57,3 +64,16 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+/*ユーザー詳細*/
+
+.user {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+ }
+ 
+ .show-main {
+    height: 300px;
+ }
