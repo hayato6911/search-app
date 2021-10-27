@@ -2,10 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*ユーザー一覧*/
-
-h1.users-heading {
+ /*ユーザー一覧*/
+ 
+ h1.users-heading {
     text-align: center;
     font-size: 20px;
     font-weight: 900;
-}
+ }
+ 
+ form#edit_user {
+    margin-left: 25%;
+ }
+ 
+ input#user_username {
+    width: 200px;
+ }
+ 
+ input#user_email {
+    width: 200px;
+ }
+ 
+ input#user_password {
+    width: 200px;
+ }
+ 
+ input#user_password_confirmation {
+    width: 200px;
+ }
+ 
+ input#user_current_password {
+    width: 200px;
+ }
+ 
+ label {
+     font-weight: bold;
+ }
+ 
+ .hero1.is-info1 {
+     background-color: green;
+     color: #fff;
+ }
+ 
+ .hero1.is-info1 .title {
+     color: #fff;
+     text-align: center;
+ }
