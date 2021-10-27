@@ -37,9 +37,9 @@
         </div>
 
         <div class="field">
-          <%= f.label :profile_image_id, class: "label" %>
+          <%= f.label :自己紹介, class: "label" %>
           <p class="control has-icons-left">
-            <%= f.file_field :profile_image_id, autofocus: true, autocomplete: "profile_image_id",  class: "input" %>
+            <%= f.text_field :profile, autofocus: true, autocomplete: "profile",  class: "input" %>
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
