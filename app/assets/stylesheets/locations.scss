@@ -4,304 +4,308 @@
 
 /*共通*/
 .location1{
-    width:200px;
-  }
+  width:200px;
+}
 
 .icon_imagea{
   height:300px;
   width:300px;
 }
  
-  .touroku{
-    text-align:center;
-    border-bottom: 25px solid #fff;
-  }
+.touroku{
+  text-align:center;
+  border-bottom: 25px solid #fff;
+}
 
-  .arrow_box{
-    text-align:center;
-  }
+.arrow_box{
+  text-align:center;
+}
 
-  .icon_image1 {
-    height: auto;
-    max-width: 80%;
-    margin: 0 auto;
-  }
+.icon_image1 {
+  height: auto;
+  max-width: 80%;
+  margin: 0 auto;
+}
   
-  table td, th {
-    border-bottom: solid 2px white;
-  }
+table td, th {
+  border-bottom: solid 2px white;
+}
   
-  /*登録済みスポット一覧（自分で登録）*/
+/*登録済みスポット一覧（自分で登録）*/
   
-  .cont_title h1 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-  }
+.cont_title h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
   
-  .cont_title hr {
-      width: 95px;
-      margin: 5px auto 0;
-      border: 0;
-      border-bottom: 3px solid black;
-  }
+.cont_title hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 3px solid black;
+}
   
-  table.location_info_base1 {
-      width: 800px;
-      margin: 30px auto -24px;
-      font-size: 16px;
-  }
+table.location_info_base1 {
+  width: 800px;
+  margin: 30px auto -24px;
+  font-size: 16px;
+}
   
-  table.location_info_base1 th {
-    background: black;
-    vertical-align: middle;
-    text-align: center;
-    width: 200px;
-    overflow: visible;
-    position: relative;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-  }
+table.location_info_base1 th {
+  background: black;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
   
-  table.location_info_base1 td {
-    padding: 10px;
-    color: #000;
-    background: #F6F6F6;
-    font-weight: 700;
-  }
+table.location_info_base1 td {
+  padding: 10px;
+  color: #000;
+  background: #F6F6F6;
+  font-weight: 700;
+}
   
-  /*みんなのスポット一覧*/
+/*みんなのスポット一覧*/
   
-  .cont_title2 hr {
-      width: 95px;
-      margin: 5px auto 0;
-      border: 0;
-      border-bottom: 3px solid black;
-  }
+.cont_title2 hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 3px solid black;
+}
   
-  .cont_title2 h1 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-  }
+.cont_title2 h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
   
-  table.location_info_base2 {
-      width: 800px;
-      margin: 30px auto -25px;
-      font-size: 16px;
-  }
+table.location_info_base2 {
+  width: 800px;
+  margin: 30px auto -25px;
+  font-size: 16px;
+}
   
-  table.location_info_base2 th {
-      background: #FF9900;
-      vertical-align: middle;
-      text-align: center;
-      width: 200px;
-      overflow: visible;
-      position: relative;
-      color: #fff;
-      font-weight: bold;
-      font-size: 24px;
-  }
+table.location_info_base2 th {
+  background: #FF9900;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
   
   
-  table.location_info_base2 td {
-    padding: 10px;
-    color: #000;
-    background: #F6F6F6;
-    font-weight: 700;
-  }
+table.location_info_base2 td {
+  padding: 10px;
+  color: #000;
+  background: #F6F6F6;
+  font-weight: 700;
+}
   
-  /*スポット編集*/
+/*スポット編集*/
   
-  .edit_location{
-    max-width: 880px;
-    margin: 30px 17%;
-  }
+.edit_location{
+  max-width: 880px;
+  margin: 30px 17%;
+}
   
-  #location_location_name{
-      width: 85%;
-      height: 38px;
-      margin-left: 30px;
-  }
+#location_location_name{
+  width: 85%;
+  height: 38px;
+  margin-left: 30px;
+}
   
-  #location_introduction{
-    width: 85%;
-    height: 134px;
-    margin-left: 30px;
-  }
+#location_introduction{
+  width: 85%;
+  height: 134px;
+  margin-left: 30px;
+}
   
-  #location_address{
-    width: 85%;
-      height: 38px;
-      margin-left: 30px;
-  }
+#location_address{
+  width: 85%;
+  height: 38px;
+  margin-left: 30px;
+}
   
-  #location_price{
-      width: 85%;
-      height: 38px;
-      margin-left: 30px;
-  }
+#location_price{
+  width: 85%;
+  height: 38px;
+  margin-left: 30px;
+}
   
-  #location_location_image{
-      width: 85%;
-      height: 38px;
-      margin-left: 24px;
-  }
+#location_location_image{
+  width: 85%;
+  height: 38px;
+  margin-left: 24px;
+}
   
-  .cont_title1 h1 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-  }
+.cont_title1 h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
   
-  .cont_title1 hr {
-      width: 95px;
-      margin: 5px auto 0;
-      border: 0;
-      border-bottom: 5px solid black;
-  }
+.cont_title1 hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 5px solid black;
+}
   
-  table.location_info_base4 th {
-      background: black;
-      vertical-align: middle;
-      text-align: center;
-      width: 165px;
-      overflow: visible;
-      position: relative;
-      color: #fff;
-      font-weight: bold;
-      font-size: 24px;
-  }
+table.location_info_base4 th {
+  background: black;
+  vertical-align: middle;
+  text-align: center;
+  width: 165px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
   
-  table.location_info_base4 {
-      width: 800px;
-      margin: 30px auto 0;
-      font-size: 16px;
-      margin-bottom: 40px;
-  }
+table.location_info_base4 {
+  width: 800px;
+  margin: 30px auto 0;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
   
-  table.location_info_base4 td {
-      padding: 10px;
-      color: #000;
-      background: #F6F6F6;
-  }
+table.location_info_base4 td {
+  padding: 10px;
+  color: #000;
+  background: #F6F6F6;
+}
   
-  .done_button{
-    text-align:center;
-  }
+.done_button{
+  text-align:center;
+}
     
-  /*スポット詳細*/
+/*スポット詳細*/
   
-  table.location_info_base3 th {
-      background: #000;
-      vertical-align: middle;
-      text-align: center;
-      width: 200px;
-      overflow: visible;
-      position: relative;
-      color: #fff;
-      font-weight: bold;
-      font-size: 24px;
-  }
+table.location_info_base3 th {
+  background: #000;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
   
-  table.location_info_base3 {
-      width: 800px;
-      margin: 30px auto 0;
-      font-size: 16px;
-  }
+table.location_info_base3 {
+  width: 800px;
+  margin: 30px auto 0;
+  font-size: 16px;
+}
   
-  table.location_info_base3 td {
-      padding: 10px;
-      color: #000;
-      background: #F6F6F6;
-      font-weight: 700;
-  }
+table.location_info_base3 td {
+  padding: 10px;
+  color: #000;
+  background: #F6F6F6;
+  font-weight: 700;
+}
   
-  .cont_title3 hr {
-      width: 95px;
-      margin: 5px auto 0;
-      border: 0;
-      border-bottom: 3px solid #000;
-  }
+.cont_title3 hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 3px solid #000;
+}
   
-  .cont_title3 h1 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-  }
+.cont_title3 h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
   
-  /*スポット登録*/
+/*スポット登録*/
   
-  table.location_info_base5 th {
-    background: black;
-      vertical-align: middle;
-      text-align: center;
-      width: 200px;
-      overflow: visible;
-      position: relative;
-      color: #fff;
-      font-weight: bold;
-      font-size: 24px;
-  }
+table.location_info_base5 th {
+  background: black;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
   
-  table.location_info_base5 {
-      width: 800px;
-      margin: 30px auto 0;
-      font-size: 16px;
-      margin-bottom: 40px;
-  }
+table.location_info_base5 {
+  width: 800px;
+  margin: 30px auto 0;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
   
-  table.location_info_base5 td {
-      padding: 10px;
-      color: #000;
-      background: #F6F6F6;
-  }
+table.location_info_base5 td {
+  padding: 10px;
+  color: #000;
+  background: #F6F6F6;
+}
   
-  .cont_title5 hr {
-      width: 95px;
-      margin: 5px auto 0;
-      border: 0;
-      border-bottom: 3px solid black;
-  }
+.cont_title5 hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 3px solid black;
+}
   
-  .cont_title5 h1 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding-top: 15px;
-  }
+.cont_title5 h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
 /*星のcss*/
 
 .star-rating {
-    position: relative;
-    width: 5em;
-    height: 1em;
-    font-size: 25px;
-  }
-  .star-rating-front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    color: #ffcc33;
-  }
-  .star-rating-back {
-    color: #ccc;
-  }
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+}
+
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+
+.star-rating-back {
+  color: #ccc;
+}
   
-  .average-score {
-    display: flex;
-  }
-  .average-score-display {
-    font-size: 16px;
-  }
+.average-score {
+  display: flex;
+}
+
+.average-score-display {
+  font-size: 16px;
+}

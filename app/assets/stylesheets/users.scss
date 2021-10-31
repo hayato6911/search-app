@@ -5,80 +5,80 @@
  /*ユーザー一覧*/
  
  h1.users-heading {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 900;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
  }
  
  form#edit_user {
-    margin-left: 25%;
+  margin-left: 25%;
  }
  
  input#user_username {
-    width: 450px;
+  width: 450px;
  }
  
  input#user_email {
-    width: 450px;
+  width: 450px;
  }
  
  input#user_password {
-    width: 450px;
+  width: 450px;
  }
  
  input#user_password_confirmation {
-    width: 450px;
+  width: 450px;
  }
  
  input#user_current_password {
-    width: 450px;
+  width: 450px;
  }
  
  label {
-     font-weight: bold;
+  font-weight: bold;
  }
  
  .hero1.is-info1 {
-     background-color: green;
-     color: #fff;
+  background-color: green;
+  color: #fff;
  }
  
  .hero1.is-info1 .title {
-     color: #fff;
-     text-align: center;
+  color: #fff;
+  text-align: center;
  }
 
  input#user_profile {
-    width: 500px;
-    height: 200px;
+  width: 500px;
+  height: 200px;
 }
 
 /*ユーザー登録一覧*/
 
  .user-right {
-    border-bottom: 1px solid black;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 30px;
+  border-bottom: 1px solid black;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /*ユーザー詳細*/
 
 .user {
-    text-align: center;
-    font-size: 25px;
-    margin-bottom: 20px;
-    margin-top: 200px;
- }
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
  
- .show-main {
-    height: 300px;
- }
+.show-main {
+  height: 300px;
+}
 
- .backbutton {
-    margin-left: 50%;
-    font-size: 20px;
+.backbutton {
+  margin-left: 50%;
+  font-size: 20px;
 }

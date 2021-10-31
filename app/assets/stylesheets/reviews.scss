@@ -2,37 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .rating-box .ratings .fa{
-    font-size: 30px;
-    color:#ffcc00;
-    cursor: pointer;
-  }
+  font-size: 30px;
+  color:#ffcc00;
+  cursor: pointer;
+}
   
-  .main-rating {
-    display: flex;
-  }
+.main-rating {
+  display: flex;
+}
   
-  .rating-value-display {
-    font-size: 20px;
-  }
+.rating-value-display {
+  font-size: 20px;
+}
   
-  .is-size-4 {
-      font-size: 1.5rem !important;
-      text-align: center;
-  }
+.is-size-4 {
+  font-size: 1.5rem !important;
+  text-align: center;
+}
   
-  .main-rating {
-      display: flex;
-      margin-left: 42%;
-  }
+.main-rating {
+  display: flex;
+  margin-left: 42%;
+}
   
-  input#review_content {
-      width: 50%;
-      height: 200px;
-      display: block;
-      margin: 0 auto;
-  }
+input#review_content {
+  width: 50%;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
   
-  .mt-3 {
-      margin-top: 0.75rem !important;
-      text-align: center;
-  }  
+.mt-3 {
+  margin-top: 0.75rem !important;
+  text-align: center;
+}  
