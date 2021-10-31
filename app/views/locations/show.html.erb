@@ -16,8 +16,6 @@
         <th>スポット画像</th>
         <% if @location.location_image? %>
           <td><img src=<%= location.location_image.to_s %> class = "icon_imagea"></td>
-        <% else %>
-          <td><%= image_tag src='default.jpeg', class: "icon_imagea", alt: "ユーザーアイコン" %></td>
         <% end %>
       </tr>
       <tr class="arrow_box">
