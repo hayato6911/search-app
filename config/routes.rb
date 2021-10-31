@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   get 'locations/posts'
   get 'helpful/index'
   resources :locations
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: "users/registrations",
+  }
   root to: "home#index"
   
   resources :users, :only => [:posts, :index, :show]
