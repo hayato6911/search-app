@@ -27,6 +27,10 @@
     <% if user_signed_in? %>
     <header class="page-header" id="header">
       <div class="navbar-item">
+        <%= search_form_for @q  do |f| %>
+          <%= f.search_field :address_cont, placeholder: '例）埼玉県春日部市' %>
+          <%= f.submit "検索", class: "button2"%>
+        <% end %>
         <a href="/" class="title is-4" style="font-family: cursive;">Asobuno Tanosiiina</a>
         <ul class="menu">
           <li>
