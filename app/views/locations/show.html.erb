@@ -14,9 +14,7 @@
       </tr>
       <tr class="arrow_box">
         <th>スポット画像</th>
-        <% if @location.location_image? %>
-          <td><img src=<%= location.location_image.to_s %> class = "icon_imagea"></td>
-        <% end %>
+          <td><img src=<%= @location.location_image.to_s %> class = "icon_imagea"></td>
       </tr>
       <tr class="arrow_box">
         <th>住所</th>
